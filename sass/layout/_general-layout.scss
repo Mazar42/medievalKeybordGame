@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // user-select: none;
+    user-select: none;
 }
 
 body{
@@ -40,8 +40,8 @@ body{
         .secret-word{
             color: rgba(0, 0, 0, 0.336);
             transition: color 1000ms;
-            width: 50%;
-            height: 25%;
+            min-width: 200px;
+            min-height: 15px;
             
 
         &:hover{
@@ -49,4 +49,9 @@ body{
         }   
         }
     }
+}
+
+#players-answer{
+    border: none;
+    background-color: $intense-button-color;
 }

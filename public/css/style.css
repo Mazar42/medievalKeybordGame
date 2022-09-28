@@ -69,6 +69,11 @@ button {
   background-color: #7c6331;
   margin-top: 30px;
   margin-bottom: 30px;
+  transition: background 1000ms;
+}
+button:hover {
+  cursor: pointer;
+  background-color: #d1a752;
 }
 
 /*Layout imports*/
@@ -76,6 +81,7 @@ button {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 body {
@@ -112,11 +118,16 @@ body {
 #canva .secret-words-container .secret-word {
   color: rgba(0, 0, 0, 0.336);
   transition: color 1000ms;
-  width: 50%;
-  height: 25%;
+  min-width: 200px;
+  min-height: 15px;
 }
 #canva .secret-words-container .secret-word:hover {
   color: black;
+}
+
+#players-answer {
+  border: none;
+  background-color: #d1a752;
 }
 
 /*# sourceMappingURL=style.css.map */
