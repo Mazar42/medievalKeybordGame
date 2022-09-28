@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // user-select: none;
+}
+
+body{
+    text-align: center;
+    min-height: 100vh;
+    background: url(../../media/monastery.jpg);
+    background-position: center;
+}
+
+.scoreboard{
+    margin-bottom: 15px;
+}
+
+#canva{
+    cursor: url(../../media/magnifying-glass-small.png), auto;
+    padding-top: 35px;
+    border: none;
+    border-top: 1px rgb(66, 0, 0, 0.540);
+    border-left: 1px rgb(66, 0, 0, 0.540);
+    background: url(../../media/pergament.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 15px black;
+    position: relative;
+    margin: 0 auto;
+    height: 500px;
+    width: 500px;
+
+    .secret-words-container{
+
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .secret-word{
+            color: rgba(0, 0, 0, 0.336);
+            transition: color 1000ms;
+            width: 50%;
+            height: 25%;
+            
+
+        &:hover{
+            color: black;
+        }   
+        }
+    }
+}
