@@ -1,22 +1,18 @@
 // get button from DOM
 startButton = document.getElementById('start')
 
-
 let words = ["plume", "grimoir", "pierre", "dragon", "bouclier", "corbeau", "tour", "chevalier"]
 let selectedWord = ""
 let secretBoxes = document.getElementsByClassName('secret-word')
 let displayedTimer = document.getElementById('time')
-let playersAnswer = document.getElementById('players-answer').value
-let sumbitAnswerButton = document.getElementById('submit-answer')
+let playersanswer = ""
 
-const displayAnswer = () =>{
-    console.log(playersAnswer)
-}
-
-sumbitAnswerButton.addEventListener('submit', function(e) {
-    e.preventDefault();
-    displayAnswer();
-});
+function getInputValue() {
+    // Selecting the input element and get its value 
+let playersanswer = document.getElementById("inputId").value;
+    // Displaying the value
+    console.log(playersanswer);
+  }
 
 function start() {
 
@@ -63,8 +59,8 @@ function start() {
     else {
         console.log('Une partie est déjà en cours !')
     }
+    
 }
-
 
 // start game when player hits button
 
