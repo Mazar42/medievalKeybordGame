@@ -57,7 +57,7 @@ function start() {
     }
 
     else {
-        console.log('Une partie est déjà en cours !')
+        alert('Une partie est déjà en cours !')
     }
     
 }
