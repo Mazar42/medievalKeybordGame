@@ -5,14 +5,10 @@ let words = ["plume", "grimoir", "pierre", "dragon", "bouclier", "corbeau", "tou
 let selectedWord = ""
 let secretBoxes = document.getElementsByClassName('secret-word')
 let displayedTimer = document.getElementById('time')
+let sumbitButton = document.getElementById('submit-answer')
 let playersanswer = ""
 
-function getInputValue() {
-    // Selecting the input element and get its value 
-let playersanswer = document.getElementById("inputId").value;
-    // Displaying the value
-    console.log(playersanswer);
-  }
+
 
 function start() {
 
@@ -53,7 +49,21 @@ function start() {
         // Insert selected word in selected location
         selectedLocation.innerHTML += selectedWord
 
-        console.log(wordLocation)
+        function getInputValue() {
+            // Selecting the input element and get its value 
+        let playersanswer = document.getElementById("inputId").value;
+            // Displaying the value
+           if(playersanswer == selectedWord){
+            console.log('bien joué frérot')
+           }
+           else{
+            console.log("ben non t'es nul là frérot")
+           }
+          }
+
+        sumbitButton.addEventListener('click', () => {
+            getInputValue()
+        })
     }
 
     else {
