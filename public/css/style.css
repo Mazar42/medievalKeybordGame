@@ -96,7 +96,7 @@ body {
 }
 
 #canva {
-  cursor: url(../../media/magnifying-glass-small.png), auto;
+  cursor: url(../../media/magic-candle.png) 25 15, auto;
   padding-top: 35px;
   border: none;
   border-top: 1px rgba(66, 0, 0, 0.54);
@@ -117,7 +117,7 @@ body {
 }
 #canva .secret-words-container .secret-word {
   color: rgba(0, 0, 0, 0);
-  transition: color 1000ms;
+  transition: color 350ms;
   min-width: 200px;
   min-height: 15px;
 }
