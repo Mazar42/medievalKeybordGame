@@ -7,7 +7,7 @@ let currentScore = document.getElementById('score')
 let selectedWord
 let selectedLocation
 
-// function to write a new word on pargement
+// function to write a new word on parchment
 const writeWord = () => {
     //Choose a random word from a "words" list
     let wordNumber = Math.floor(Math.random() * (words.length))
@@ -22,7 +22,7 @@ const writeWord = () => {
 
     }
 
-// function to delete a word from pargement
+// function to delete a word from parchment
 
 const deleteCurrentWord = () =>{
     let userField = document.getElementById("inputId")
