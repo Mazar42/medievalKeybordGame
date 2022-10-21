@@ -16,7 +16,7 @@ body{
     margin-bottom: 15px;
 }
 
-#canva{
+#parchment{
     cursor: url(../../media/magic-candle.png) 25 15, auto;
     padding-top: 35px;
     border: none;
@@ -28,8 +28,8 @@ body{
     box-shadow: 0 10px 15px black;
     position: relative;
     margin: 0 auto;
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
 
     .secret-words-container{
 
@@ -38,7 +38,7 @@ body{
         flex-wrap: wrap;
 
         .secret-word{
-            color: rgba(0, 0, 0, 0);
+            color: rgba(0, 0, 0, 0.874);
             transition: color 350ms;
             min-width: 200px;
             min-height: 15px;
@@ -51,8 +51,14 @@ body{
     }
 }
 
-#players-answer{
-    border: none;
-    background-color: $intense-button-color;
-    margin-bottom: 10px;
+#solution{
+    margin-top:20px;
 }
+
+@media all and (min-width : 1300px){
+    #parchment{
+        height: 550px;
+        width: 550px;
+    }
+}
+        

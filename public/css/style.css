@@ -64,6 +64,10 @@ table {
   font-weight: 900;
 }
 
+.secret-word {
+  font-size: x-large;
+}
+
 /*components imports*/
 button {
   background-color: #7c6331;
@@ -95,7 +99,7 @@ body {
   margin-bottom: 15px;
 }
 
-#canva {
+#parchment {
   cursor: url(../../media/magic-candle.png) 25 15, auto;
   padding-top: 35px;
   border: none;
@@ -107,28 +111,33 @@ body {
   box-shadow: 0 10px 15px black;
   position: relative;
   margin: 0 auto;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
 }
-#canva .secret-words-container {
+#parchment .secret-words-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-#canva .secret-words-container .secret-word {
-  color: rgba(0, 0, 0, 0);
+#parchment .secret-words-container .secret-word {
+  color: rgba(0, 0, 0, 0.874);
   transition: color 350ms;
   min-width: 200px;
   min-height: 15px;
 }
-#canva .secret-words-container .secret-word:hover {
+#parchment .secret-words-container .secret-word:hover {
   color: black;
 }
 
-#players-answer {
-  border: none;
-  background-color: #d1a752;
-  margin-bottom: 10px;
+#solution {
+  margin-top: 20px;
+}
+
+@media all and (min-width: 1300px) {
+  #parchment {
+    height: 550px;
+    width: 550px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
