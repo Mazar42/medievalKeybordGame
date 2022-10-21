@@ -120,7 +120,7 @@ body {
   flex-wrap: wrap;
 }
 #parchment .secret-words-container .secret-word {
-  color: rgba(0, 0, 0, 0.874);
+  color: rgba(0, 0, 0, 0);
   transition: color 350ms;
   min-width: 200px;
   min-height: 15px;
@@ -137,6 +137,9 @@ body {
   #parchment {
     height: 550px;
     width: 550px;
+  }
+  #parchment .secret-word {
+    margin-top: 8px;
   }
 }
 
