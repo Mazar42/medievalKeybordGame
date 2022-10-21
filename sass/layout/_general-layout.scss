@@ -38,14 +38,14 @@ body{
         flex-wrap: wrap;
 
         .secret-word{
-            color: rgba(0, 0, 0, 0);
-            transition: color 350ms;
+            opacity : 0;
+            transition: opacity 30s ease-in-out;
             min-width: 200px;
             min-height: 15px;
             
-
         &:hover{
-            color: black;
+            opacity: 1.0;
+            transition : opacity .25s ease-in-out;
         }   
         }
     }

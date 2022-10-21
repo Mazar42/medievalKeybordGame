@@ -120,13 +120,14 @@ body {
   flex-wrap: wrap;
 }
 #parchment .secret-words-container .secret-word {
-  color: rgba(0, 0, 0, 0);
-  transition: color 350ms;
+  opacity: 0;
+  transition: opacity 30s ease-in-out;
   min-width: 200px;
   min-height: 15px;
 }
 #parchment .secret-words-container .secret-word:hover {
-  color: black;
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
 }
 
 #solution {
