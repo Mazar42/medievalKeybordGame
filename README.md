@@ -4,7 +4,7 @@ A game designed to help people discover how to use keyboard and mouse
 
 Simply open it in VScode and use LiveServer to display it in a browser.
 
-The game is meant for people who experience diffculties hadling digital devices.
+The game is meant for people who experience diffculties handling digital devices.
 
 It is meant to make one use keyboard and mouse in a simple fashion.
 
