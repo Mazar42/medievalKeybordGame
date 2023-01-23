@@ -18,7 +18,7 @@ body{
 
 #parchment{
     cursor: url(../../media/magic-candle.png) 25 15, auto;
-    padding-top: 35px;
+    padding-top: 20px;
     border: none;
     border-top: 1px rgb(66, 0, 0, 0.540);
     border-left: 1px rgb(66, 0, 0, 0.540);
@@ -28,8 +28,8 @@ body{
     box-shadow: 0 10px 15px black;
     position: relative;
     margin: 0 auto;
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
 
     .secret-words-container{
 
@@ -55,7 +55,7 @@ body{
     margin-top:20px;
 }
 
-@media all and (min-width : 1300px){
+@media all and (min-width : 1400px){
     #parchment{
         height: 550px;
         width: 550px;

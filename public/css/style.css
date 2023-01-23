@@ -71,8 +71,8 @@ table {
 /*components imports*/
 button {
   background-color: #7c6331;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   transition: background 1000ms;
 }
 button:hover {
@@ -80,6 +80,14 @@ button:hover {
   background-color: #d1a752;
 }
 
+@media all and (min-width: 1400px) {
+  button {
+    background-color: #7c6331;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: background 1000ms;
+  }
+}
 /*Layout imports*/
 * {
   margin: 0;
@@ -101,7 +109,7 @@ body {
 
 #parchment {
   cursor: url(../../media/magic-candle.png) 25 15, auto;
-  padding-top: 35px;
+  padding-top: 20px;
   border: none;
   border-top: 1px rgba(66, 0, 0, 0.54);
   border-left: 1px rgba(66, 0, 0, 0.54);
@@ -111,8 +119,8 @@ body {
   box-shadow: 0 10px 15px black;
   position: relative;
   margin: 0 auto;
-  height: 400px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
 }
 #parchment .secret-words-container {
   display: flex;
@@ -134,7 +142,7 @@ body {
   margin-top: 20px;
 }
 
-@media all and (min-width: 1300px) {
+@media all and (min-width: 1400px) {
   #parchment {
     height: 550px;
     width: 550px;
