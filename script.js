@@ -4,8 +4,15 @@ let secretBoxes = document.getElementsByClassName('secret-word')
 let displayedTimer = document.getElementById('time')
 let sumbitButton = document.getElementById('submit-answer')
 let currentScore = document.getElementById('score')
+let highScore = localStorage.getItem('highScore')
+let highScoreDisplay = document.getElementById('high-score')  
 let selectedWord
 let selectedLocation
+
+console.log(highScore);
+if(highScore != null){
+    highScoreDisplay.innerHTML = highScore
+}
 
 // function to write a new word on parchment
 const writeWord = () => {
@@ -31,7 +38,7 @@ const deleteCurrentWord = () =>{
 }
 
 //create a words list
-let words = ["plume", "grimoir", "pierre", "dragon", "bouclier", "corbeau", "tour", "chevalier"]
+let words = ["plume", "krak", "lige", "épée", "fort", "herse", "tour", "douve", "sir", "pique", "bourg", "cire", "sceau", "écu", "joute", "graal", "roi"]
 
 function start() {
 
@@ -52,6 +59,7 @@ function start() {
                 sec--
                 if (sec < -1) {
                     clearInterval(timer)
+                    if(highScore < points || highScore == null){console.log(localStorage.setItem('highScore', points))}
                     if(!alert("Fin de la partie ! Vous avez trouvé " + points + " mot(s) !")){window.location.reload();} 
                 }
             }, 1000)

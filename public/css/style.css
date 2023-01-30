@@ -60,7 +60,7 @@ table {
 }
 
 *, body {
-  font-size: larger;
+  font-size: x-large;
   font-weight: 900;
 }
 
@@ -107,6 +107,13 @@ body {
   margin-bottom: 15px;
 }
 
+.scorebox {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 #parchment {
   cursor: url(../../media/magic-candle.png) 25 15, auto;
   padding-top: 20px;
@@ -128,14 +135,19 @@ body {
   flex-wrap: wrap;
 }
 #parchment .secret-words-container .secret-word {
+  margin-bottom: 7px;
   opacity: 0;
-  transition: opacity 30s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
   min-width: 200px;
   min-height: 15px;
 }
 #parchment .secret-words-container .secret-word:hover {
   opacity: 1;
   transition: opacity 0.25s ease-in-out;
+}
+#parchment .secret-words-container .secret-word:not(:hover) {
+  opacity: 0;
+  transition: opacity 17s ease-in-out;
 }
 
 #solution {
